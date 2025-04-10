@@ -1,0 +1,114 @@
+---
+title: "Laboratório 01"
+author: "Leandro Kornelius"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Parte 1
+
+### Exercício 1
+Segue abaixo um exemplo de uma função afim em latex:
+$$f(x) = 2x + 3$$
+
+### Exercício 2
+
+```{r echo=TRUE}
+# Definindo um vetor x contendo uma sequência de 101 números
+x = -50:50
+y = 2 * x + 3
+```
+
+### Exercício 3
+Abaixo, é possível visualizar o gráfico com os valores de x aplicados na função definida no exercício 1. 
+
+```{r echo=FALSE}
+# Gráfico da função definida no Exercício 1
+plot(x,y)
+```
+
+# Parte 2
+
+### Exercício 4
+
+Este é um link da página Wikipedia de alguém que admiro - [Carlos Sainz](https://pt.wikipedia.org/wiki/Carlos_Sainz_Jr.)
+
+### Exercício 5
+
+**Carlos Sainz** é um ótimo piloto que teve muita consistência durante suas temporadas mesmo com as frequentes mudanças de equipe da _Fórmula 1_. Além disso, considero ele uma pessoa humilde e bastante inteligente dentro e fora das pistas. 
+
+### Exercício 6
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Formula1Gabelhofen2022_%2804%29_%28cropped%2902.jpg/500px-Formula1Gabelhofen2022_%2804%29_%28cropped%2902.jpg)
+Carlos Sainz foto
+
+### Exercício 7
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Formula1Gabelhofen2022_%2804%29_%28cropped%2902.jpg/500px-Formula1Gabelhofen2022_%2804%29_%28cropped%2902.jpg){width=25% height=25%}
+Carlos Sainz foto redimensionada reduzindo tanto a largura quanto o comprimento da foto.
+
+# Parte 3
+
+### Exercício 8
+
+Através do código abaixo, é possível visualizar as seis primeiras linhas do banco de dados Iris presente de forma nativa no R.
+
+```{r eval=FALSE}
+head(iris, 6)
+```
+
+### Exercício 9
+
+Abaixo foi definido uma matriz A com cinco linhas e colunas. 
+
+```{r echo=TRUE}
+A = matrix(c(
+  1, 2, 3, 4, 5,
+  0, 1, 0, 1, 0,
+  2, 4, 6, 2, 1,
+  1, 0, 1, 0, 1,
+  3, 1, 4, 2, 0
+), nrow = 5)
+```
+
+### Exercício 10 
+
+Abaixo foi calculado a matriz inversa de A.
+
+```{r echo=TRUE}
+solve(A)
+```
+
+### Exercício 11 
+
+Abaixo foi calculado a matriz transposta de A.
+
+```{r echo=TRUE}
+t(A)
+```
+
+### Exercício 12
+
+```{r echo=TRUE}
+l = list(
+  c("Smooth Operator","Borboletas","Resenha do Arrocha","Californication","The Emptiness Machine"),
+  c(2, 5, 23, 11, 3),
+  c(2, 3, 5, 23, 11),
+  c(F,F,T,T,T)
+)
+
+l
+```
+
+### Exercício 13
+
+```{r echo=TRUE}
+df = data.frame(
+  Integrantes = c("Anthony Kiedis", "Flea", "Chad Smith", "John Frusciante"),
+  Instrumentos = c("Vocal", "Baixo", "Bateria", "Guitarra"),
+  Vivo = c("Vivo", "Vivo", "Vivo", "Vivo"),
+  Idades = c(61, 61, 62, 54)
+)
+
+df
+```
